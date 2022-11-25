@@ -1,85 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Lavagens</title>
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
 <body>
     <!--Cabeçalho-->
-    <header>
-        <nav>
-        <img src="/." alt="logo car wash" width="70"><br>TuringWash
-        
-            <ol class="nav__lista">
-                <li class="Busca">Meus Carros</li>
-                <li class="preferidos">Minhas Lavagens</li>
-                <li class="Sair"><button class="Saida">Sair</button></li>
-            </ol>
-        </nav>
-    <hr/>
+    <header class="Cabecalho">
+        <img class="Cabecalho_Imagem" src="file:///C:/Users/samue/Desktop/bootcamp-full-stack-ituring/mes-2-dominando-frontend/turingwash-front-end/img/turingwash-logo.svg" alt="logo car wash" width="60">
+            <nav class="Cabecalho_MenuInicial">
+            <a href="https://www.google.com.br/?gws_rd=ssl"><strong>Meus Carros</strong></a>
+            <a href="https://www.google.com.br/?gws_rd=ssl"><strong>Minhas Lavagens</strong></a>
+            <button class="Cabecalho_botao"><strong>Sair</strong></button>
+            </nav>
     </header>
-<main>
-    <div class="item 1"
+    <!--Conteudo-->
+
+    <div class="Titulo_Inicial">
     <h1><strong>Lavadores disponíveis próximos de você</strong></h1>
-</main>
-<nav>
-    <ol class="nav_2lista">
-    <div>
-        <label>Lavar</label>
+    </div>
+<div class="Escolher_carro_ordenar">
+    <div class="Escolher_carro">
+        <span>Lavar</span>
         <select>
         <option value="Carro"> Nissan Kicks</option>
         <option value="Carro"> Fusca</option>
         <option value="Carro"> Camaro</option>
         <option value="Carro"> Chevette</option></select>
     </div>
-    <div>
-        <label>Ordenar:</label>
+    <div class="Escolher_ordenar">
+       <span>Ordenar:</span>
         <select>
         <option value="Escolha"> Proximidade</option>
         <option value="Escolha"> Preço</option>
         <option value="Escolha"> Avaliação</option></select>
     </div>
-    </ol>
-</nav>
-<nav>
-    <ol class="nav_listalavadores">
-        <a href="https://www.google.com.br/" target="*__blank">João Pereira</a>
-        <li class="Avaliações"><b>Nota 4.5 (998 avaliações)</b></li>
-        <li class="Preço"><b>R$ 80</b></li>
-        <li class="verAvaliações"><em><a href="https://www.google.com.br/" target="*__blank">Ver Avaliações</a></em></li>
-        <li class="Escolherlavador"><button class="escolher">Lavar meu carro</button></li>
-    </ol>
-</nav>
-<nav>
-    <ol class="nav_listalavadores">
-        <a href="https://www.google.com.br/" target="*__blank">Joana Santos</a>
-        <li class="Avaliações"><b>Nota 4.7 (489 avaliações)</b></li>
-        <li class="Preço"><b>R$ 75</b></li>
-        <li class="verAvaliações"><em><a href="https://www.google.com.br/" target="*__blank">Ver Avaliações</a></em></li>
-        <li class="Escolherlavador"><button class="escolher">Lavar meu carro</button></li>
-    </ol>
-</nav>
-<nav>
-    <ol class="nav_listalavadores">
-        <a href="https://www.google.com.br/" target="*__blank">Matheus Oliveira</a>
-        <li class="Avaliações"><b>Nota 4.3 (783 avaliações)</b></li>
-        <li class="Preço"><b>R$ 90</b></li>
-        <li class="verAvaliações"><em><a href="https://www.google.com.br/" target="*__blank">Ver Avaliações</a></em></li>
-        <li class="Escolherlavador"><button class="escolher">Lavar meu carro</button></li>
-    </ol>
-</nav>
-<nav>
-    <ol class="nav_listalavadores">
-        <a href="https://www.google.com.br/" target="*__blank">Pedro Sampaio</a>
-        <li class="Avaliações"><b>Nota 4.1 (801 avaliações)</b></li>
-        <li class="Preço"><b>R$ 60</b></li>
-        <li class="verAvaliações"><em><a href="https://www.google.com.br/" target="*__blank">Ver Avaliações</a></em></li>
-        <li class="Escolherlavador"><button class="escolher">Lavar meu carro</button></li>
-    </ol>
-</nav>
+</div>
+<br>
+<main>
+    <section class="Lavadores">
+        <article class="Lavadores_1">
+        <div class="Lavadores_imagem">
+            <img src="./img/profile.png" alt="Logo de Usuario" width="60">
+        </div>
+        <div class="Lavadores_nomes">
+            <a href="https://www.google.com.br/">João Pereira</a>
+        </div>
+        <div class="Lavadores_avaliacao">
+            <span><b>Nota 4.5 (998 avaliações)</b></span>
+        </div>
+        <div class="Lavadores_Preço">
+            <span><b>R$ 80</b></span>
+        </div>
+        <div class="Lavadores_verificarAvaliacao">
+            <span><em>Ver Avaliações</em></span>
+        </div>
+        <div class="Lavador_escolher">
+            <button class="escolher">Lavar meu carro</button>
+        </div>
+    </article>
+    <article class="Lavadores_2">
+        <div class="Lavadores_imagem">
+            <img src="./img/profile.png" alt="Logo de Usuario" width="60">
+        </div>
+        <div class="Lavadores_nomes">
+            <a href="https://www.google.com.br/">Joana Santos</a>
+        </div>
+        <div class="Lavadores_avaliacao">
+            <span><b>Nota 4.7 (489 avaliações)</b></span>
+        </div>
+        <div class="Lavadores_Preço">
+            <span><b>R$ 75</b></span>
+        </div>
+        <div class="Lavadores_verificarAvaliacao">
+            <span><em>Ver Avaliações</em></span>
+        </div>
+        <div class="Lavador_escolher">
+            <button class="escolher">Lavar meu carro</button>
+        </div>
+    </article>
+    <article class="Lavadores_3">
+        <div class="Lavadores_imagem">
+            <img src="./img/profile.png" alt="Logo de Usuario" width="60">
+        </div>
+        <div class="Lavadores_nomes">
+            <a href="https://www.google.com.br/">Matheus Oliveira</a>
+        </div>
+        <div class="Lavadores_avaliacao">
+            <span><b>Nota 4.3 (783 avaliações)</b></span>
+        </div>
+        <div class="Lavadores_Preço">
+            <span><b>R$ 90</b></span>
+        </div>
+        <div class="Lavadores_verificarAvaliacao">
+            <span><em>Ver Avaliações</em></span>
+        </div>
+        <div class="Lavador_escolher">
+            <button class="escolher">Lavar meu carro</button>
+        </div>
+    </article>
+    <article class="Lavadores_4">
+        <div class="Lavadores_imagem">
+            <img src="./img/profile.png" alt="Logo de Usuario" width="60">
+        </div>
+        <div class="Lavadores_nomes">
+            <a href="https://www.google.com.br/">Pedro Sampaio</a>
+        </div>
+        <div class="Lavadores_avaliacao">
+            <span><b>Nota 4.1 (801 avaliações)</b></span>
+        </div>
+        <div class="Lavadores_Preço">
+            <span><b>R$ 60</b></span>
+        </div>
+        <div class="Lavadores_verificarAvaliacao">
+            <span><em>Ver Avaliações</em></span>
+        </div>
+        <div class="Lavador_escolher">
+            <button class="escolher">Lavar meu carro</button>
+        </div>
+    </article>
+</section>
+</main>
 </body>
 <footer>
-    <img src="https://w7.pngwing.com/pngs/197/460/png-transparent-car-wash-poster-icon-car-wash-worker-car-accident-car-mode-of-transport-thumbnail.png" alt="logo car wash" width="70">
+    <img src="file:///C:/Users/samue/Desktop/bootcamp-full-stack-ituring/mes-2-dominando-frontend/turingwash-front-end/img/turingwash-logo.svg" alt="logo car wash final" width="60">
     <nav>
         <ul>
             <li>Sobre</li>
